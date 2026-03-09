@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>M.Cars Dépannage Service Lyon</title>
+<title>Dépannage Lyon | M.Cars Dépannage Service</title>
 
-<meta name="description" content="Dépannage auto 24h/24 à Lyon. M.Cars Dépannage Service intervient rapidement pour remorquage et assistance automobile.">
+<meta name="description" content="Dépannage auto Lyon 24h/24. Remorquage et transport de véhicule. Intervention rapide sur Lyon et alentours.">
 
-<meta name="keywords" content="dépannage lyon, dépannage auto lyon, remorquage lyon, dépanneuse lyon">
+<meta name="keywords" content="dépannage lyon, dépanneuse lyon, remorquage lyon, dépannage auto lyon">
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#111;
+background:#1a1a1a;
 color:white;
 }
 
@@ -23,93 +25,139 @@ color:white;
 
 header{
 background:black;
-display:flex;
-align-items:center;
-padding:15px;
+padding:30px;
+text-align:center;
 }
 
 .logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo img{
-width:50px;
-}
-
-.logo h1{
-font-size:22px;
+font-size:32px;
+font-weight:bold;
 color:#e10600;
-margin:0;
 }
 
 /* BANNIERE */
 
 .banner{
+
 height:420px;
-background-image:url("https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2");
+
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600");
+
 background-size:cover;
 background-position:center;
+
 display:flex;
 align-items:center;
 justify-content:center;
+
 text-align:center;
-}
 
-.banner h2{
-font-size:40px;
-background:rgba(0,0,0,0.6);
+font-size:36px;
+
 padding:20px;
-border-radius:10px;
+
 }
 
-/* BOUTONS */
+/* SECTIONS */
 
-.buttons{
-margin-top:20px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 30px;
-margin:10px;
-font-size:18px;
-border-radius:8px;
-text-decoration:none;
-color:white;
-}
-
-.call{
-background:#e10600;
-}
-
-.whatsapp{
-background:#25D366;
+.section{
+padding:60px;
+text-align:center;
 }
 
 /* SERVICES */
 
 .services{
-padding:50px 20px;
-text-align:center;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
 }
 
-.service-box{
-background:#1c1c1c;
-padding:20px;
-margin:15px;
+.service{
+
+background:#2b2b2b;
+
+padding:25px;
+
+width:220px;
+
 border-radius:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.5);
+
 }
+
+/* BOUTONS */
+
+.button{
+
+background:#e10600;
+
+color:white;
+
+padding:18px;
+
+font-size:20px;
+
+text-decoration:none;
+
+border-radius:8px;
+
+display:inline-block;
+
+margin:10px;
+
+}
+
+.button:hover{
+
+background:#b80000;
+
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background:#25D366;
+
+color:white;
+
+padding:15px 20px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-size:20px;
+
+}
+
+/* FOOTER */
 
 footer{
+
 background:black;
-padding:20px;
+
+padding:30px;
+
 text-align:center;
-color:gray;
+
+color:#aaa;
+
 }
 
 </style>
+
 </head>
 
 <body>
@@ -117,61 +165,119 @@ color:gray;
 <header>
 
 <div class="logo">
-<img src="https://cdn-icons-png.flaticon.com/512/1995/1995470.png">
-<h1>M.Cars Dépannage Service</h1>
+🚛 M.Cars Dépannage Service
 </div>
+
+<p>M.Cars dépannage service à votre écoute</p>
+
+<p>📍 Lyon et alentours</p>
 
 </header>
 
-<section class="banner">
+<div class="banner">
 
-<div>
+M.Cars dépannage service à votre écoute 24h/24
 
-<h2>M.Cars Dépannage Service à votre écoute 24h/24</h2>
+</div>
 
-<div class="buttons">
+<div class="section">
 
-<a class="btn call" href="tel:+33600000029">
-📞 Appeler maintenant
+<h2>Contact rapide</h2>
+
+<a class="button" href="tel:+33641605784">
+📞 06 41 60 57 84
 </a>
 
-<a class="btn whatsapp" href="https://wa.me/33600000029">
-💬 WhatsApp
+<a class="button" href="tel:+33630189729">
+📞 06 30 18 97 29
+</a>
+
+<br>
+
+<a class="button" href="sms:+33641605784">
+💬 Devis gratuit par SMS
+</a>
+
+<a class="button" href="sms:+33630189729">
+💬 Devis gratuit par SMS
 </a>
 
 </div>
 
+<div class="section">
+
+<h2>Nos services</h2>
+
+<div class="services">
+
+<div class="service">
+🚗 Dépannage auto
 </div>
 
-</section>
-
-<section class="services">
-
-<h2>Nos services à Lyon</h2>
-
-<div class="service-box">
-🚗 Dépannage auto 24h/24
+<div class="service">
+🚛 Remorquage
 </div>
 
-<div class="service-box">
-🚛 Remorquage véhicule
+<div class="service">
+🔋 Batterie
 </div>
 
-<div class="service-box">
-🔧 Assistance panne voiture
+<div class="service">
+🚨 Accident
 </div>
 
-<div class="service-box">
-🛞 Intervention rapide Lyon et alentours
 </div>
 
-</section>
+</div>
+
+<div class="section">
+
+<h2>Dépannage Lyon et alentours</h2>
+
+<p>
+
+Intervention rapide sur Lyon, Villeurbanne, Bron, Vénissieux, Saint-Priest et toute la région.
+
+</p>
+
+<p>
+
+Transport de véhicule partout en France et en Europe.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Nous localiser</h2>
+
+<iframe
+
+src="https://www.google.com/maps?q=lyon&output=embed"
+
+width="100%"
+
+height="400"
+
+style="border:0;">
+
+</iframe>
+
+</div>
 
 <footer>
 
-© 2026 M.Cars Dépannage Service – Dépannage auto Lyon
+M.Cars Dépannage Service © 2026
 
 </footer>
 
+<a class="whatsapp" href="https://wa.me/33641605784">
+
+WhatsApp
+
+</a>
+
 </body>
+
 </html>
