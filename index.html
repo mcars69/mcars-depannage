@@ -28,31 +28,26 @@ text-align:center;
 /* LOGO */
 
 .logo{
-display:flex;
-flex-direction:column;
-align-items:center;
-}
-
-.logo svg{
-width:120px;
-margin-bottom:10px;
-}
-
-.logo-text{
-font-size:30px;
+font-size:34px;
 color:#e10600;
 font-weight:bold;
 letter-spacing:2px;
 }
 
+.subtitle{
+color:#ccc;
+margin-top:10px;
+}
+
 /* BANNIERE */
 
 .banner{
+
 height:420px;
 
 background:
 linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-url("https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=1600");
+url("https://images.unsplash.com/photo-1542367597-8849eb950fd8?q=80&w=1600");
 
 background-size:cover;
 background-position:center;
@@ -63,6 +58,7 @@ justify-content:center;
 
 font-size:40px;
 font-weight:bold;
+
 }
 
 /* SECTIONS */
@@ -97,17 +93,17 @@ font-size:18px;
 
 }
 
-/* BOUTON APPEL */
+/* BOUTONS */
 
-.call{
+.button{
 
 background:#e10600;
 
 color:white;
 
-padding:20px;
+padding:18px;
 
-font-size:22px;
+font-size:20px;
 
 text-decoration:none;
 
@@ -115,13 +111,21 @@ border-radius:8px;
 
 display:inline-block;
 
-margin-top:20px;
+margin:10px;
 
 }
 
-.call:hover{
+.button:hover{
 
 background:#b80000;
+
+}
+
+/* MAP */
+
+.map{
+
+margin-top:30px;
 
 }
 
@@ -135,6 +139,8 @@ padding:30px;
 
 text-align:center;
 
+color:#aaa;
+
 }
 
 </style>
@@ -146,56 +152,41 @@ text-align:center;
 <header>
 
 <div class="logo">
-
-<svg viewBox="0 0 120 60">
-
-<rect x="5" y="28" width="55" height="15" fill="#666"/>
-<rect x="60" y="22" width="30" height="20" fill="#999"/>
-<rect x="90" y="30" width="25" height="6" fill="#e10600"/>
-
-<circle cx="25" cy="47" r="7" fill="black"/>
-<circle cx="75" cy="47" r="7" fill="black"/>
-
-<line x1="90" y1="25" x2="110" y2="15" stroke="#e10600" stroke-width="3"/>
-
-</svg>
-
-<div class="logo-text">
-
-M Cars Dépannage Service
-
+🚛 M Cars Dépannage Service
 </div>
 
+<div class="subtitle">
+Dépannage • Remorquage • Transport
 </div>
-
-<p>Dépannage • Remorquage • Transport</p>
 
 <p>📍 Lyon et alentours</p>
 
 </header>
 
 <div class="banner">
-
 Dépannage Auto 24h/24
-
 </div>
 
 <div class="section">
 
-<h2>📞 Appelez-nous</h2>
+<h2>📞 Contact rapide</h2>
 
-<a class="call" href="tel:+33641605784">
-
-06 41 60 57 84
-
+<a class="button" href="tel:+33641605784">
+📞 Appeler 06 41 60 57 84
 </a>
 
-<br><br>
+<a class="button" href="tel:+33630189729">
+📞 Appeler 06 30 18 97 29
+</a>
 
-<a class="call" href="tel:+33630189729">
+<br>
 
-06 30 18 97 29
+<a class="button" href="sms:+33641605784">
+💬 Devis gratuit par SMS
+</a>
 
+<a class="button" href="sms:+33630189729">
+💬 Devis gratuit par SMS
 </a>
 
 </div>
@@ -238,20 +229,15 @@ Dépannage Auto 24h/24
 
 </div>
 
-<div class="section">
+<div class="section map">
 
 <h2>Nous localiser</h2>
 
 <iframe
-
 src="https://www.google.com/maps?q=lyon&output=embed"
-
 width="100%"
-
 height="400"
-
 style="border:0;">
-
 </iframe>
 
 </div>
