@@ -1,16 +1,17 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>M.Cars Dépannage</title>
+<title>M.Cars Dépannage Service</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#000;
+font-family:Arial;
+background:black;
 color:white;
 }
 
@@ -22,94 +23,91 @@ border-bottom:2px solid red;
 
 header h2{
 margin:0;
-font-size:22px;
 }
 
 .hero{
+
 height:400px;
-background-image: url("depanneuse.jpg");
+
+/* PHOTO EN FOND */
+background-image:url("depanneuse.jpg");
+
 background-size:cover;
 background-position:center;
+
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
+
 }
 
 .hero-box{
+
 background:rgba(0,0,0,0.65);
 padding:40px;
-border-radius:12px;
+border-radius:10px;
+
 }
 
 .hero-box h1{
-margin:0 0 10px 0;
 font-size:40px;
-}
-
-.hero-box p{
-margin-bottom:25px;
-color:#ddd;
-}
-
-.buttons{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-justify-content:center;
+margin-bottom:10px;
 }
 
 .btn{
-padding:14px 22px;
-border:none;
+
+display:inline-block;
+padding:12px 20px;
+margin:5px;
 border-radius:8px;
-font-size:16px;
-font-weight:bold;
-cursor:pointer;
 text-decoration:none;
+color:white;
+font-weight:bold;
+
 }
 
 .call{
-background:#e30000;
-color:white;
+background:red;
 }
 
 .whatsapp{
-background:#22c55e;
-color:white;
+background:#25D366;
 }
 
 .services{
-padding:60px 20px;
+
 text-align:center;
+padding:60px 20px;
+
 }
 
-.services h2{
-margin-bottom:40px;
-}
+.service-grid{
 
-.cards{
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
 gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+
 }
 
-.card{
+.service{
+
 background:#111;
-padding:25px;
-width:220px;
+padding:20px 30px;
 border-radius:10px;
 border:1px solid #222;
+
 }
 
 footer{
-text-align:center;
-padding:20px;
-background:black;
+
 border-top:2px solid red;
+text-align:center;
+padding:15px;
 margin-top:40px;
-font-size:14px;
+
 }
 
 </style>
@@ -130,15 +128,11 @@ font-size:14px;
 
 <p>À votre écoute 24h/24 pour tout dépannage automobile</p>
 
-<div class="buttons">
+<a class="btn call" href="tel:0600000000">📞 Appeler 06 XX XX XX XX</a>
 
-<a class="btn call" href="tel:06XXXXXXXX">📞 Appeler 06 XX XX XX XX</a>
+<a class="btn call" href="tel:0600000000">📞 Appeler 06 XX XX XX XX</a>
 
-<a class="btn call" href="tel:06XXXXXXXX">📞 Appeler 06 XX XX XX XX</a>
-
-<a class="btn whatsapp" href="https://wa.me/33600000000">💬 WhatsApp</a>
-
-</div>
+<a class="btn whatsapp" href="#">💬 WhatsApp</a>
 
 </div>
 
@@ -148,25 +142,21 @@ font-size:14px;
 
 <h2>Nos services</h2>
 
-<div class="cards">
+<div class="service-grid">
 
-<div class="card">🚗 Dépannage auto</div>
-
-<div class="card">🚚 Remorquage véhicule</div>
-
-<div class="card">🔋 Batterie voiture</div>
-
-<div class="card">🔑 Ouverture voiture</div>
+<div class="service">🚗 Dépannage auto</div>
+<div class="service">🚚 Remorquage véhicule</div>
+<div class="service">🔋 Batterie voiture</div>
+<div class="service">🔑 Ouverture voiture</div>
 
 </div>
 
 </section>
 
 <footer>
-
 © 2026 M.Cars Dépannage
-
 </footer>
 
 </body>
 </html>
+```
