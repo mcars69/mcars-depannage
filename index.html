@@ -6,296 +6,191 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dépannage Lyon - M.CARS Dépannage Service 24h/24</title>
+<title>M.CARS Dépannage Service Lyon</title>
 
-<meta name="description" content="Dépannage Lyon - M.CARS Dépannage Service. Remorquage, panne batterie, crevaison, transport véhicule. Intervention rapide 24h/24 à Lyon et alentours.">
-
-<meta name="keywords" content="dépannage lyon, dépanneuse lyon, remorquage lyon, dépannage voiture lyon, dépannage 24h lyon">
+<meta name="description" content="Dépannage Lyon - M.CARS Dépannage Service. Remorquage et dépannage automobile 24h/24 à Lyon et alentours.">
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#f4f6f9;
+background:#f5f7fa;
 color:#333;
 }
 
 /* BANNIERE */
 
 .hero{
-background-image:url("https://images.unsplash.com/photo-1600320254374-ce2d293c324e");
-background-size:cover;
-background-position:center;
-height:420px;
+height:85vh;
+background:url('https://www.france-utilitaires.fr/images/Image/103115824_01_hd.jpg') center/cover no-repeat;
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
+justify-content:center;
 text-align:center;
 color:white;
-position:relative;
 }
 
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
+.overlay{
 background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:10px;
 }
 
 .hero h1{
 font-size:40px;
-margin:0;
-z-index:2;
+margin-bottom:10px;
 }
 
 .hero p{
 font-size:20px;
-z-index:2;
-}
-
-/* BOUTONS */
-
-.buttons{
-margin-top:20px;
-z-index:2;
+margin-bottom:25px;
 }
 
 .btn{
-background:#2563eb;
+background:#2d6cdf;
+padding:15px 30px;
 color:white;
-padding:14px 28px;
-border-radius:30px;
 text-decoration:none;
-margin:8px;
-display:inline-block;
+border-radius:30px;
 font-weight:bold;
+margin:10px;
+display:inline-block;
 }
 
-/* SERVICES */
+/* SECTION */
 
 .section{
-padding:60px 20px;
-max-width:1100px;
-margin:auto;
-display:flex;
-gap:30px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-width:320px;
-}
-
-.card h3{
-border-bottom:3px solid #2563eb;
-padding-bottom:10px;
-}
-
-/* PHOTOS */
-
-.galerie{
-background:#eef2f7;
 padding:60px 20px;
 text-align:center;
 }
 
-.photos{
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
 max-width:1100px;
 margin:auto;
 }
 
-.photos img{
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img{
 width:100%;
 height:200px;
 object-fit:cover;
-border-radius:10px;
+}
+
+.card h3{
+padding:15px;
 }
 
 /* MAP */
 
 .map{
-padding:60px 20px;
-text-align:center;
-}
-
-iframe{
-width:90%;
-max-width:900px;
-height:400px;
-border-radius:10px;
-border:none;
+margin-top:40px;
 }
 
 /* FOOTER */
 
 footer{
-background:#0f172a;
+background:#0b2545;
 color:white;
-text-align:center;
 padding:30px;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-color:white;
-text-decoration:none;
-}
-
-/* EMAIL */
-
-.email{
-position:fixed;
-bottom:90px;
-right:20px;
-background:#2563eb;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:24px;
-color:white;
-text-decoration:none;
+text-align:center;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="hero">
+<!-- BANNIERE -->
+
+<section class="hero">
+
+<div class="overlay">
 
 <h1>M.CARS Dépannage Service</h1>
 
 <p>Dépannage et remorquage automobile à Lyon 24h/24</p>
 
-<div class="buttons">
+<a class="btn" href="tel:+33641605784">📞 Appeler maintenant</a>
 
-<a href="tel:+33641605784" class="btn">📞 Appeler maintenant</a>
+<a class="btn" href="tel:+33630189729">🚗 Assistance rapide</a>
 
-<a href="tel:+33630189729" class="btn">📞 Appeler maintenant</a>
-
-<a href="mcarsspro69@gmail.com" class="btn">✉️ Envoyer un email</a>
+<a class="btn" href="mcarsspro69@gmail.com">✉️ Envoyer un email</a>
 
 </div>
 
-</div>
+</section>
 
-<div class="section">
+<!-- PHOTOS -->
 
-<div class="card">
-
-<h3>Dépannage et Remorquage</h3>
-
-<ul>
-<li>Dépanneuse</li>
-<li>Remorquage</li>
-<li>Crevaison</li>
-<li>Batterie</li>
-<li>Panne carburant</li>
-<li>Transport véhicule</li>
-<li>Réparation sur place</li>
-</ul>
-
-</div>
-
-<div class="card">
-
-<h3>Zone d'intervention</h3>
-
-<ul>
-<li>Lyon</li>
-<li>Rhône</li>
-<li>Auvergne-Rhône-Alpes</li>
-<li>France</li>
-<li>Europe</li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="galerie">
+<section class="section">
 
 <h2>Nos interventions</h2>
 
-<div class="photos">
+<div class="grid">
 
-<img src="https://images.unsplash.com/photo-1581093458791-9f3c3250fdf0">
-<img src="https://images.unsplash.com/photo-1590362891991-f776e747a588">
-<img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f">
-<img src="https://images.unsplash.com/photo-1600320254374-ce2d293c324e">
-<img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
-<img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
+<div class="card">
+<img src="https://www.france-utilitaires.fr/images/Image/103115824_01_hd.jpg">
+<h3>Dépannage véhicule</h3>
+</div>
 
+<div class="card">
+<img src="https://demarchesadministratives.fr/images/actualites/2862/les-tarifs-de-depannage-des-vehicules-sur-autoroutes-augmentent-en-2020-1.jpg">
+<h3>Dépanneuse autoroute</h3>
+</div>
+
+<div class="card">
+<img src="https://i.servimg.com/u/f79/20/45/03/11/img_2010.jpg">
+<h3>Remorquage voiture</h3>
+</div>
+
+<div class="card">
+<img src="https://www.tjm-automobiles.fr/wp-content/uploads/2025/08/groupe-tjm-auto-neuf-occasion-Capture-decran-2024-07-09-150347.png">
+<h3>Transport véhicule</h3>
 </div>
 
 </div>
+
+</section>
+
+<!-- GOOGLE MAP -->
+
+<section class="section">
+
+<h2>Zone d'intervention</h2>
+
+<p>Lyon et alentours — Intervention en France et en Europe</p>
 
 <div class="map">
 
-<h2>Notre zone d'intervention</h2>
-
-<p>Nous intervenons à Lyon et dans toute la France et Europe</p>
-
-<iframe src="https://maps.google.com/maps?q=lyon&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe>
+<iframe
+src="https://maps.google.com/maps?q=Lyon&t=&z=11&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="400"
+style="border:0;"
+loading="lazy">
+</iframe>
 
 </div>
 
+</section>
+
 <footer>
 
-M.CARS Dépannage Service • Dépannage Lyon • Intervention 24h/24
+M.CARS Dépannage Service  
+Dépannage Lyon - Remorquage 24h/24  
 
 </footer>
-
-<a href="https://wa.me/33774344883" class="whatsapp">💬</a>
-
-<a href="mcarsspro69@gmail.com" class="email">✉️</a>
-
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "AutoRepair",
- "name": "M.CARS Dépannage Service",
- "telephone": "+33630189729",
- "areaServed": {
- "@type": "Place",
- "name": "Lyon"
- },
- "address": {
- "@type": "PostalAddress",
- "addressLocality": "Lyon",
- "addressCountry": "France"
- },
- "openingHours": "Mo-Su 00:00-23:59"
-}
-</script>
 
 </body>
 </html>
