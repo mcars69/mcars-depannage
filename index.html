@@ -2,10 +2,15 @@
 <html lang="fr">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>M.CARS Dépannage Service Lyon</title>
+<title>Dépannage Lyon - M.CARS Dépannage Service 24h/24</title>
+
+<meta name="description" content="Dépannage Lyon - M.CARS Dépannage Service. Remorquage, panne batterie, crevaison, transport véhicule. Intervention rapide 24h/24 à Lyon et alentours.">
+
+<meta name="keywords" content="dépannage lyon, dépanneuse lyon, remorquage lyon, dépannage voiture lyon, dépannage 24h lyon">
 
 <style>
 
@@ -19,7 +24,7 @@ color:#333;
 /* BANNIERE */
 
 .hero{
-background-image:url("https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2");
+background-image:url("https://images.unsplash.com/photo-1600320254374-ce2d293c324e");
 background-size:cover;
 background-position:center;
 height:420px;
@@ -44,19 +49,20 @@ background:rgba(0,0,0,0.6);
 
 .hero h1{
 font-size:40px;
-z-index:2;
 margin:0;
+z-index:2;
 }
 
 .hero p{
-z-index:2;
 font-size:20px;
-margin-top:10px;
+z-index:2;
 }
 
+/* BOUTONS */
+
 .buttons{
-z-index:2;
 margin-top:20px;
+z-index:2;
 }
 
 .btn{
@@ -68,10 +74,6 @@ text-decoration:none;
 margin:8px;
 display:inline-block;
 font-weight:bold;
-}
-
-.btn:hover{
-background:#1e40af;
 }
 
 /* SERVICES */
@@ -120,7 +122,21 @@ width:100%;
 height:200px;
 object-fit:cover;
 border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* MAP */
+
+.map{
+padding:60px 20px;
+text-align:center;
+}
+
+iframe{
+width:90%;
+max-width:900px;
+height:400px;
+border-radius:10px;
+border:none;
 }
 
 /* FOOTER */
@@ -129,8 +145,7 @@ footer{
 background:#0f172a;
 color:white;
 text-align:center;
-padding:25px;
-margin-top:40px;
+padding:30px;
 }
 
 /* WHATSAPP */
@@ -146,7 +161,7 @@ border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:28px;
+font-size:30px;
 color:white;
 text-decoration:none;
 }
@@ -212,13 +227,14 @@ text-decoration:none;
 
 <div class="card">
 
-<h3>Types de véhicules</h3>
+<h3>Zone d'intervention</h3>
 
 <ul>
-<li>Voitures</li>
-<li>Utilitaires</li>
-<li>Véhicules légers</li>
-<li>2 roues</li>
+<li>Lyon</li>
+<li>Rhône</li>
+<li>Auvergne-Rhône-Alpes</li>
+<li>France</li>
+<li>Europe</li>
 </ul>
 
 </div>
@@ -231,26 +247,55 @@ text-decoration:none;
 
 <div class="photos">
 
-<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
-<img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e">
-<img src="https://images.unsplash.com/photo-1600661653561-629509216228">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
-<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
-<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d">
+<img src="https://images.unsplash.com/photo-1581093458791-9f3c3250fdf0">
+<img src="https://images.unsplash.com/photo-1590362891991-f776e747a588">
+<img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f">
+<img src="https://images.unsplash.com/photo-1600320254374-ce2d293c324e">
+<img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
+<img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
 
 </div>
+
+</div>
+
+<div class="map">
+
+<h2>Notre zone d'intervention</h2>
+
+<p>Nous intervenons à Lyon et dans toute la France et Europe</p>
+
+<iframe src="https://maps.google.com/maps?q=lyon&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe>
 
 </div>
 
 <footer>
 
-M.CARS Dépannage Service • Lyon et alentours
+M.CARS Dépannage Service • Dépannage Lyon • Intervention 24h/24
 
 </footer>
 
-<a href="https://wa.me/33630189729" class="whatsapp">💬</a>
+<a href="https://wa.me/33774344883" class="whatsapp">💬</a>
 
-<a href="mailto:contact@mcarsdepannage.fr" class="email">✉️</a>
+<a href="mcarsspro69@gmail.com" class="email">✉️</a>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "AutoRepair",
+ "name": "M.CARS Dépannage Service",
+ "telephone": "+33630189729",
+ "areaServed": {
+ "@type": "Place",
+ "name": "Lyon"
+ },
+ "address": {
+ "@type": "PostalAddress",
+ "addressLocality": "Lyon",
+ "addressCountry": "France"
+ },
+ "openingHours": "Mo-Su 00:00-23:59"
+}
+</script>
 
 </body>
 </html>
