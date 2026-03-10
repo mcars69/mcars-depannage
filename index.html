@@ -11,111 +11,136 @@
 body{
 margin:0;
 font-family:Arial;
-background:#f5f5f5;
+background:#f4f6f9;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:#0f1e2e;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+header h1{
+color:#1e90ff;
+margin:5px;
 }
 
 /* BANNIERE */
 
 .hero{
-height:550px;
-background:url('depanneuse.jpg') center/cover no-repeat;
+height:500px;
+background:url('banniere.jpg') center/cover no-repeat;
 display:flex;
-flex-direction:column;
 align-items:center;
 justify-content:center;
 text-align:center;
 color:white;
-position:relative;
 }
 
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-}
-
-.logo{
+.hero h2{
+background:rgba(0,0,0,0.5);
+padding:20px;
+border-radius:10px;
 font-size:40px;
-font-weight:bold;
-color:white;
-margin-bottom:10px;
 }
 
-.hero h1{
-font-size:45px;
-margin:10px 0;
+/* SECTION */
+
+.section{
+padding:60px 10%;
 }
 
-.hero p{
-font-size:20px;
+.section h2{
+text-align:center;
+margin-bottom:40px;
 }
 
-/* BOUTONS */
+/* ENTREPRISE */
 
-.buttons{
-margin-top:30px;
+.entreprise{
+display:flex;
+gap:50px;
+align-items:center;
+flex-wrap:wrap;
 }
 
-.btn{
-background:#6c63ff;
-color:white;
-padding:15px 30px;
-border-radius:30px;
-text-decoration:none;
-margin:10px;
-display:inline-block;
-font-weight:bold;
+.entreprise img{
+width:450px;
+border-radius:10px;
 }
 
-.btn:hover{
-background:#5149d8;
+.info{
+flex:1;
 }
 
-/* CARTES */
+/* CARDS */
 
 .cards{
 display:flex;
-justify-content:center;
-gap:40px;
-margin-top:-80px;
-padding-bottom:60px;
+gap:30px;
+margin-top:30px;
 flex-wrap:wrap;
 }
 
 .card{
 background:white;
-padding:30px;
-width:300px;
+padding:25px;
 border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+flex:1;
+min-width:250px;
 }
 
-.card h2{
-border-bottom:3px solid #6c63ff;
-padding-bottom:10px;
+/* GALERIE */
+
+.galerie{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
-.card ul{
-padding-left:20px;
+.galerie img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
 }
 
-.card li{
-margin:10px 0;
+/* SLIDER */
+
+.slider{
+overflow:hidden;
+margin-top:40px;
 }
 
-.footer{
+.slide-track{
+display:flex;
+animation:scroll 30s linear infinite;
+}
+
+.slide-track img{
+height:200px;
+margin-right:20px;
+border-radius:10px;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0);}
+100%{transform:translateX(-100%);}
+}
+
+/* FOOTER */
+
+footer{
+background:#0f1e2e;
+color:white;
 text-align:center;
-padding:20px;
-color:#555;
+padding:30px;
+margin-top:50px;
 }
 
 </style>
@@ -123,67 +148,107 @@ color:#555;
 
 <body>
 
-<!-- BANNIERE -->
+<header>
+<h1>M.CARS Dépannage Service</h1>
+<p>Dépannage • Remorquage • Transport</p>
+<p>📍 Lyon et alentours</p>
+</header>
 
 <div class="hero">
-
-<div class="hero-content">
-
-<div class="logo">M.CARS Dépannage Service</div>
-
-<h1>Dépannage et Remorquage Automobile</h1>
-
-<p>Dépannage automobile à Lyon et alentours</p>
-
-<div class="buttons">
-
-<a class="btn" href="tel:+33641605784">📞 Afficher numéro</a>
-
-<a class="btn" href="mailto:contact@mcars.fr">✉️ Contactez-nous</a>
-
+<h2>M.CARS dépannage service à votre écoute 24h/24</h2>
 </div>
 
-</div>
-</div>
+<section class="section">
 
-<!-- CARTES -->
+<h2>Notre entreprise</h2>
+
+<div class="entreprise">
+
+<img src="photo1.jpg">
+
+<div class="info">
+
+<p>
+M.CARS Dépannage est votre partenaire de confiance pour tout dépannage et remorquage automobile à Lyon et dans toute la région.
+</p>
 
 <div class="cards">
 
 <div class="card">
-
-<h2>Dépannage et Remorquage</h2>
-
-<ul>
-<li>Dépanneuse</li>
-<li>Remorquage</li>
-<li>Crevaison</li>
-<li>Batterie</li>
-<li>Carburant</li>
-<li>Transport véhicule</li>
-<li>Réparation sur place</li>
-</ul>
-
+<h3>Expérience</h3>
+<p>
+Avec plusieurs années d'expérience nous possédons une expertise permettant de diagnostiquer et résoudre rapidement les pannes.
+</p>
 </div>
 
 <div class="card">
+<h3>Rapidité d'intervention</h3>
+<p>
+Nous intervenons rapidement pour minimiser votre temps d'attente.
+</p>
+</div>
 
-<h2>Types de véhicules</h2>
+<div class="card">
+<h3>24h/24 - 7j/7</h3>
+<p>
+Nous sommes disponibles à tout moment pour répondre à vos besoins de dépannage.
+</p>
+</div>
 
-<ul>
-<li>Voitures</li>
-<li>Utilitaires</li>
-<li>Véhicules légers</li>
-<li>2 roues</li>
-</ul>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Nos interventions</h2>
+
+<div class="galerie">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+<img src="photo7.jpg">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Nos dépannages</h2>
+
+<div class="slider">
+
+<div class="slide-track">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+<img src="photo7.jpg">
 
 </div>
 
 </div>
 
-<div class="footer">
-M.CARS Dépannage Service • Lyon et alentours
-</div>
+</section>
+
+<footer>
+
+<p>M.CARS Dépannage Service</p>
+<p>Lyon et toute la région</p>
+<p>Dépannage • Remorquage • Transport</p>
+
+</footer>
 
 </body>
 </html>
