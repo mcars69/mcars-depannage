@@ -2,7 +2,6 @@
 <html lang="fr">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,115 +16,94 @@ background:#f4f6f9;
 color:#333;
 }
 
-/* HEADER */
-
-header{
-background:#0b2545;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-header h1{
-margin:0;
-font-size:32px;
-}
-
-header p{
-margin:5px;
-}
-
 /* BANNIERE */
 
 .hero{
-background:url("banniere.jpg");
+background-image:url("https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2");
 background-size:cover;
 background-position:center;
-height:450px;
+height:420px;
 display:flex;
 flex-direction:column;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 color:white;
+position:relative;
 }
 
-.hero h2{
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:rgba(0,0,0,0.6);
+}
+
+.hero h1{
 font-size:40px;
-margin:10px;
+z-index:2;
+margin:0;
 }
 
 .hero p{
-font-size:18px;
+z-index:2;
+font-size:20px;
+margin-top:10px;
 }
 
-/* BOUTONS */
-
 .buttons{
+z-index:2;
 margin-top:20px;
 }
 
 .btn{
-background:#4f6df5;
+background:#2563eb;
 color:white;
-padding:12px 25px;
-border-radius:25px;
-margin:10px;
-display:inline-block;
+padding:14px 28px;
+border-radius:30px;
 text-decoration:none;
+margin:8px;
+display:inline-block;
+font-weight:bold;
 }
 
-/* CARTES */
+.btn:hover{
+background:#1e40af;
+}
 
-.cards{
+/* SERVICES */
+
+.section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
 display:flex;
-justify-content:center;
-gap:40px;
-margin-top:-60px;
-padding:40px;
+gap:30px;
 flex-wrap:wrap;
+justify-content:center;
 }
 
 .card{
 background:white;
-padding:30px;
+padding:25px;
 border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-width:300px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+width:320px;
 }
 
 .card h3{
-border-bottom:3px solid #4f6df5;
+border-bottom:3px solid #2563eb;
 padding-bottom:10px;
 }
 
-.card ul{
-padding-left:20px;
-}
-
-/* ENTREPRISE */
-
-.entreprise{
-padding:60px 10%;
-display:flex;
-gap:40px;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.entreprise img{
-width:420px;
-border-radius:10px;
-}
-
-.entreprise-text{
-flex:1;
-}
-
-/* GALERIE */
+/* PHOTOS */
 
 .galerie{
-padding:60px 10%;
+background:#eef2f7;
+padding:60px 20px;
 text-align:center;
 }
 
@@ -133,55 +111,88 @@ text-align:center;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
-margin-top:40px;
+max-width:1100px;
+margin:auto;
 }
 
 .photos img{
 width:100%;
-height:220px;
+height:200px;
 object-fit:cover;
 border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
 }
 
 /* FOOTER */
 
 footer{
-background:#0b2545;
+background:#0f172a;
 color:white;
 text-align:center;
-padding:30px;
-margin-top:50px;
+padding:25px;
+margin-top:40px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+color:white;
+text-decoration:none;
+}
+
+/* EMAIL */
+
+.email{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#2563eb;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+color:white;
+text-decoration:none;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<header>
+<div class="hero">
 
 <h1>M.CARS Dépannage Service</h1>
-<p>Dépannage automobile à Lyon et alentours</p>
 
-</header>
+<p>Dépannage et remorquage automobile à Lyon 24h/24</p>
 
-<section class="hero">
+<div class="buttons">
 
-<h2>Dépannage et Remorquage Automobile</h2>
+<a href="tel:+33641605784" class="btn">📞 Appeler maintenant</a>
 
-<p>Intervention rapide 24h/24 - 7j/7</p>
+<a href="tel:+33630189729" class="btn">📞 Appeler maintenant</a>
 
-<div class="buttons">         
-<a class="btn">Afficher numéro<33641605784/a>
-<a class="btn">Afficher numéro<33630189729/a> 
-<a class="btn">Contactez-nous</a>
+<a href="mcarsspro69@gmail.com" class="btn">✉️ Envoyer un email</a>
 
 </div>
 
-</section>
+</div>
 
-<section class="cards">
+<div class="section">
 
 <div class="card">
 
@@ -192,7 +203,7 @@ margin-top:50px;
 <li>Remorquage</li>
 <li>Crevaison</li>
 <li>Batterie</li>
-<li>Carburant</li>
+<li>Panne carburant</li>
 <li>Transport véhicule</li>
 <li>Réparation sur place</li>
 </ul>
@@ -212,63 +223,34 @@ margin-top:50px;
 
 </div>
 
-</section>
-
-<section class="entreprise">
-
-<img src="photo1.jpg">
-
-<div class="entreprise-text">
-
-<h2>Notre entreprise</h2>
-
-<p>
-
-M.CARS Dépannage Service est votre partenaire de confiance pour tout dépannage et remorquage automobile dans la région lyonnaise.
-
-</p>
-
-<p>
-
-Avec plusieurs années d'expérience, nous intervenons rapidement pour résoudre votre problème et remettre votre véhicule en sécurité.
-
-</p>
-
-<p>
-
-Nous sommes disponibles 24h/24 et 7j/7 pour vous assister partout à Lyon et dans les alentours.
-
-</p>
-
 </div>
 
-</section>
-
-<section class="galerie">
+<div class="galerie">
 
 <h2>Nos interventions</h2>
 
 <div class="photos">
 
-<img src="photo1.jpg">
-<img src="photo2.jpg">
-<img src="photo3.jpg">
-<img src="photo4.jpg">
-<img src="photo5.jpg">
-<img src="photo6.jpg">
-<img src="photo7.jpg">
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
+<img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e">
+<img src="https://images.unsplash.com/photo-1600661653561-629509216228">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
+<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d">
 
 </div>
 
-</section>
+</div>
 
 <footer>
 
-<p>M.CARS Dépannage Service</p>
-<p>Lyon et alentours</p>
+M.CARS Dépannage Service • Lyon et alentours
 
 </footer>
 
-</body>
+<a href="https://wa.me/33630189729" class="whatsapp">💬</a>
 
+<a href="mailto:contact@mcarsdepannage.fr" class="email">✉️</a>
+
+</body>
 </html>
